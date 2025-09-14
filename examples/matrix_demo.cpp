@@ -1,17 +1,31 @@
-#include "../include/core/matrix.hpp"
-#include "../include/core/linalg.hpp"
+#include "core/linalg.hpp"
 #include <iostream>
 
-int main() {
-    Matrix A(2,2), B(2,2);
-    A(0,0)=1; A(0,1)=2; A(1,0)=3; A(1,1)=4;
-    B(0,0)=5; B(0,1)=6; B(1,0)=7; B(1,1)=8;
+using namespace objects;
+using namespace core;
 
-    Matrix C = linalg::multiply(A, B);
-    C.print();
+int main()
+{
+    Matrix A(2, 2, 1.0);
+    Matrix B(2, 2, 2.0);
 
-    Matrix D = linalg::add(A, B);
-    D.print();
+    std::cout << "Matrix A:\n";
+    A.print();
+
+    std::cout << "Matrix B:\n";
+    B.print();
+
+    std::cout << "A + B:\n";
+    add(A, B).print();
+
+    std::cout << "A - B:\n";
+    subtract(A, B).print();
+
+    std::cout << "A * B:\n";
+    multiply(A, B).print();
+
+    std::cout << "Transpose(A):\n";
+    transpose(A).print();
 
     return 0;
 }

@@ -1,10 +1,17 @@
-#pragma once
-#include "matrix.hpp"
+#ifndef LINALG_HPP
+#define LINALG_HPP
 
-namespace linalg
+#include "objects/matrix.hpp"
+
+namespace core
 {
-    Matrix add(const Matrix &A, const Matrix &B);
-    Matrix subtract(const Matrix &A, const Matrix &B);
-    Matrix multiply(const Matrix &A, const Matrix &B);
-    Matrix transpose(const Matrix &A);    
-}
+
+    // Các phép toán cơ bản
+    objects::Matrix add(const objects::Matrix &A, const objects::Matrix &B);
+    objects::Matrix subtract(const objects::Matrix &A, const objects::Matrix &B);
+    objects::Matrix multiply(const objects::Matrix &A, const objects::Matrix &B);
+    objects::Matrix transpose(const objects::Matrix &A);
+
+} // namespace core
+
+#endif // LINALG_HPP
