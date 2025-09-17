@@ -1,0 +1,42 @@
+Start testing: Sep 17 13:41 SE Asia Standard Time
+----------------------------------------------------------
+1/2 Testing: LinalgTests
+1/2 Test: LinalgTests
+Command: "E:/Github Projects/crail/build/test_linalg.exe"
+Directory: E:/Github Projects/crail/build
+"LinalgTests" start time: Sep 17 13:41 SE Asia Standard Time
+Output:
+----------------------------------------------------------
+test_add passed ✅
+test_subtract passed ✅
+test_multiply passed ✅
+test_transpose passed ✅
+All linalg tests passed 🎉
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"LinalgTests" end time: Sep 17 13:41 SE Asia Standard Time
+"LinalgTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: CalculusTests
+2/2 Test: CalculusTests
+Command: "E:/Github Projects/crail/build/test_calculus.exe"
+Directory: E:/Github Projects/crail/build
+"CalculusTests" start time: Sep 17 13:41 SE Asia Standard Time
+Output:
+----------------------------------------------------------
+test_derivative passed ✅
+test_second_derivative passed ✅
+test_gradient passed ✅
+All calculus tests passed 🎉
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"CalculusTests" end time: Sep 17 13:41 SE Asia Standard Time
+"CalculusTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 17 13:41 SE Asia Standard Time

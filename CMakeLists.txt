@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(mymath VERSION 1.0 LANGUAGES CXX)
+project(crail VERSION 1.0 LANGUAGES CXX)
 
 # Chuẩn C++
 set(CMAKE_CXX_STANDARD 17)
@@ -13,20 +13,27 @@ set(SOURCES
 )
 
 # Static library
-add_library(mymath STATIC ${SOURCES})
+add_library(crail STATIC ${SOURCES})
 
 # Shared library
-add_library(mymath_shared SHARED ${SOURCES})
+add_library(crail_shared SHARED ${SOURCES})
 
 # Include headers
-target_include_directories(mymath PUBLIC ${CMAKE_SOURCE_DIR}/include)
-target_include_directories(mymath_shared PUBLIC ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(crail PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+
+target_include_directories(crail_shared PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
 
 # ============= CÀI ĐẶT =============
 include(GNUInstallDirs)
 
-install(TARGETS mymath mymath_shared
-    EXPORT mymathTargets
+install(TARGETS crail crail_shared
+    EXPORT crailTargets
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}   # .a
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}   # .so / .dll
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}   # .exe / .dll
@@ -34,29 +41,33 @@ install(TARGETS mymath mymath_shared
 
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
-install(EXPORT mymathTargets
-    FILE mymathConfig.cmake
-    NAMESPACE mymath::
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/mymath
+install(EXPORT crailTargets
+    FILE crailConfig.cmake
+    NAMESPACE crail::
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/crail
 )
 
-# ============= TESTS =============
-option(MYMATH_BUILD_TESTS "Build unit tests" ON)
-
-if(MYMATH_BUILD_TESTS)
-    enable_testing()
-    add_executable(test_matrix tests/test_matrix.cpp)
-    target_link_libraries(test_matrix PRIVATE mymath)
-    add_test(NAME MatrixTests COMMAND test_matrix)
-endif()
-
 # ============= EXAMPLES =============
-option(MYMATH_BUILD_EXAMPLES "Build examples" ON)
+option(CRAIL_BUILD_EXAMPLES "Build examples" ON)
 
-if(MYMATH_BUILD_EXAMPLES)
+if(CRAIL_BUILD_EXAMPLES)
     add_executable(matrix_demo examples/matrix_demo.cpp)
-    target_link_libraries(matrix_demo PRIVATE mymath)
+    target_link_libraries(matrix_demo PRIVATE crail)
 
     add_executable(calculus_demo examples/calculus_demo.cpp)
-    target_link_libraries(calculus_demo PRIVATE mymath)
+    target_link_libraries(calculus_demo PRIVATE crail)
+endif()
+
+# ============= TESTS =============
+option(CRAIL_BUILD_TESTS "Build tests" ON)
+
+if(CRAIL_BUILD_TESTS)
+    enable_testing()
+    add_executable(test_linalg tests/test_linalg.cpp)
+    target_link_libraries(test_linalg PRIVATE crail)
+    add_test(NAME LinalgTests COMMAND test_linalg)
+
+    add_executable(test_calculus tests/test_calculus.cpp)
+    target_link_libraries(test_calculus PRIVATE crail)
+    add_test(NAME CalculusTests COMMAND test_calculus)
 endif()

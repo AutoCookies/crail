@@ -1,0 +1,2 @@
+E:\mingw64\bin\ar.exe qc libmymath.a CMakeFiles/mymath.dir/src/core/linalg.cpp.obj CMakeFiles/mymath.dir/src/core/calculus.cpp.obj CMakeFiles/mymath.dir/src/objects/matrix.cpp.obj
+E:\mingw64\bin\ranlib.exe libmymath.a

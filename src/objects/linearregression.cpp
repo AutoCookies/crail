@@ -1,0 +1,7 @@
+
+
+namespace objects {
+    class LinearRegression {
+        
+    }
+}

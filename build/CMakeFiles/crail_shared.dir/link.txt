@@ -1,0 +1,3 @@
+E:\mingw64\bin\cmake.exe -E rm -f CMakeFiles\crail_shared.dir/objects.a
+E:\mingw64\bin\ar.exe qc CMakeFiles\crail_shared.dir/objects.a @CMakeFiles\crail_shared.dir\objects1.rsp
+E:\mingw64\bin\g++.exe -g -shared -o libcrail_shared.dll -Wl,--out-implib,libcrail_shared.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\crail_shared.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\crail_shared.dir\linkLibs.rsp

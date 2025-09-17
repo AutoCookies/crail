@@ -1,0 +1,62 @@
+[
+{
+  "directory": "E:/Github Projects/crail/build",
+  "command": "E:\\mingw64\\bin\\g++.exe  @CMakeFiles/crail.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\crail.dir\\src\\core\\linalg.cpp.obj -c \"E:\\Github Projects\\crail\\src\\core\\linalg.cpp\"",
+  "file": "E:/Github Projects/crail/src/core/linalg.cpp",
+  "output": "CMakeFiles/crail.dir/src/core/linalg.cpp.obj"
+},
+{
+  "directory": "E:/Github Projects/crail/build",
+  "command": "E:\\mingw64\\bin\\g++.exe  @CMakeFiles/crail.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\crail.dir\\src\\core\\calculus.cpp.obj -c \"E:\\Github Projects\\crail\\src\\core\\calculus.cpp\"",
+  "file": "E:/Github Projects/crail/src/core/calculus.cpp",
+  "output": "CMakeFiles/crail.dir/src/core/calculus.cpp.obj"
+},
+{
+  "directory": "E:/Github Projects/crail/build",
+  "command": "E:\\mingw64\\bin\\g++.exe  @CMakeFiles/crail.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\crail.dir\\src\\objects\\matrix.cpp.obj -c \"E:\\Github Projects\\crail\\src\\objects\\matrix.cpp\"",
+  "file": "E:/Github Projects/crail/src/objects/matrix.cpp",
+  "output": "CMakeFiles/crail.dir/src/objects/matrix.cpp.obj"
+},
+{
+  "directory": "E:/Github Projects/crail/build",
+  "command": "E:\\mingw64\\bin\\g++.exe -Dcrail_shared_EXPORTS @CMakeFiles/crail_shared.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\crail_shared.dir\\src\\core\\linalg.cpp.obj -c \"E:\\Github Projects\\crail\\src\\core\\linalg.cpp\"",
+  "file": "E:/Github Projects/crail/src/core/linalg.cpp",
+  "output": "CMakeFiles/crail_shared.dir/src/core/linalg.cpp.obj"
+},
+{
+  "directory": "E:/Github Projects/crail/build",
+  "command": "E:\\mingw64\\bin\\g++.exe -Dcrail_shared_EXPORTS @CMakeFiles/crail_shared.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\crail_shared.dir\\src\\core\\calculus.cpp.obj -c \"E:\\Github Projects\\crail\\src\\core\\calculus.cpp\"",
+  "file": "E:/Github Projects/crail/src/core/calculus.cpp",
+  "output": "CMakeFiles/crail_shared.dir/src/core/calculus.cpp.obj"
+},
+{
+  "directory": "E:/Github Projects/crail/build",
+  "command": "E:\\mingw64\\bin\\g++.exe -Dcrail_shared_EXPORTS @CMakeFiles/crail_shared.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\crail_shared.dir\\src\\objects\\matrix.cpp.obj -c \"E:\\Github Projects\\crail\\src\\objects\\matrix.cpp\"",
+  "file": "E:/Github Projects/crail/src/objects/matrix.cpp",
+  "output": "CMakeFiles/crail_shared.dir/src/objects/matrix.cpp.obj"
+},
+{
+  "directory": "E:/Github Projects/crail/build",
+  "command": "E:\\mingw64\\bin\\g++.exe  @CMakeFiles/matrix_demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\matrix_demo.dir\\examples\\matrix_demo.cpp.obj -c \"E:\\Github Projects\\crail\\examples\\matrix_demo.cpp\"",
+  "file": "E:/Github Projects/crail/examples/matrix_demo.cpp",
+  "output": "CMakeFiles/matrix_demo.dir/examples/matrix_demo.cpp.obj"
+},
+{
+  "directory": "E:/Github Projects/crail/build",
+  "command": "E:\\mingw64\\bin\\g++.exe  @CMakeFiles/calculus_demo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\calculus_demo.dir\\examples\\calculus_demo.cpp.obj -c \"E:\\Github Projects\\crail\\examples\\calculus_demo.cpp\"",
+  "file": "E:/Github Projects/crail/examples/calculus_demo.cpp",
+  "output": "CMakeFiles/calculus_demo.dir/examples/calculus_demo.cpp.obj"
+},
+{
+  "directory": "E:/Github Projects/crail/build",
+  "command": "E:\\mingw64\\bin\\g++.exe  @CMakeFiles/test_linalg.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\test_linalg.dir\\tests\\test_linalg.cpp.obj -c \"E:\\Github Projects\\crail\\tests\\test_linalg.cpp\"",
+  "file": "E:/Github Projects/crail/tests/test_linalg.cpp",
+  "output": "CMakeFiles/test_linalg.dir/tests/test_linalg.cpp.obj"
+},
+{
+  "directory": "E:/Github Projects/crail/build",
+  "command": "E:\\mingw64\\bin\\g++.exe  @CMakeFiles/test_calculus.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\test_calculus.dir\\tests\\test_calculus.cpp.obj -c \"E:\\Github Projects\\crail\\tests\\test_calculus.cpp\"",
+  "file": "E:/Github Projects/crail/tests/test_calculus.cpp",
+  "output": "CMakeFiles/test_calculus.dir/tests/test_calculus.cpp.obj"
+}
+]

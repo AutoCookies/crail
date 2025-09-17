@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-4f6a5e227a8b2ef3fd71.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "crail",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "calculus_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-calculus_demo-Debug-9527fc0836f8b292b4a2.json",
+					"name" : "calculus_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "crail::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-crail-Debug-cf8cf4fedb1f360eeb84.json",
+					"name" : "crail",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "crail_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-crail_shared-Debug-047773c75cc545d67085.json",
+					"name" : "crail_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "matrix_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matrix_demo-Debug-9379de9b7f93bcd5a3d0.json",
+					"name" : "matrix_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_calculus::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_calculus-Debug-b65ccf432cde02833ae6.json",
+					"name" : "test_calculus",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_linalg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_linalg-Debug-c95bc0e41b1f3837887c.json",
+					"name" : "test_linalg",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/Github Projects/crail/build",
+		"source" : "E:/Github Projects/crail"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
